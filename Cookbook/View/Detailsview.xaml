@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Cookbook.View.Detailsview"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView
+            BackgroundColor="#ffeb99">
+        <StackLayout>
+            <Label Text="" x:Name="dishname" 
+                   TextColor="Black"
+                   FontSize="30"
+                   HorizontalOptions="Center"
+                   FontAttributes="Italic,Bold"/>
+            
+            <Label Text="____________________________________________________________"
+                   HorizontalOptions="Center"
+                   TextColor="Brown"
+                   FontAttributes="Bold" />
+            
+            <Image Source="" x:Name="img" 
+                       HorizontalOptions="CenterAndExpand"
+                       HeightRequest="250"
+                       WidthRequest="250"/>
+
+            <Label Text="Ingredients"
+                       FontAttributes="Bold,Italic"
+                       Margin="5,5,5,0"
+                       FontSize="25" 
+                       TextColor="Black"
+                       HorizontalOptions="End"/>
+            
+                <Label Text="_________________________________"
+                   HorizontalOptions="End"
+                   TextColor="Brown"/>
+            
+                <Label Text="" x:Name="ing" 
+                       HorizontalOptions="End"
+                       FontSize="20"
+                       Margin="5,5,5,5"
+                       TextColor="Black"/>
+            
+                <Label Text="Steps"
+                       FontAttributes="Bold,Italic"
+                       Margin="5,5,5,0"
+                       TextColor="Black"
+                       FontSize="25"/>
+            
+                <Label Text="_________________________"
+                   HorizontalOptions="Start"
+                       TextColor="Brown"/>
+            
+                <Label Text="" x:Name="pro" 
+                       FontSize="20"
+                       TextColor="Black"
+                       Margin="5,5,5,5"/>
+         </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
